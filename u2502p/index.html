@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atenção!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden; /* Remove o scroll lateral */
+            text-align: center; /* Centraliza todo o texto */
+        }
+        .headline {
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box; /* Garante que padding não exceda a largura da tela */
+            font-size: 24px; /* Mesmo tamanho do título principal */
+            font-weight: bold;
+        }
+        .headline-red {
+            background-color: red;
+            color: white;
+        }
+        .headline-green {
+            background-color: green;
+            color: white;
+        }
+        .content {
+            padding: 20px;
+            max-width: 600px;
+            width: 100%; /* Garante que o conteúdo não exceda a largura da tela */
+            box-sizing: border-box; /* Garante que padding não exceda a largura da tela */
+        }
+        .content-title {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content-text {
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .price-old {
+            color: red;
+            font-size: 20px;
+        }
+        .price-new {
+            color: green;
+            font-weight: normal;
+            font-size: 24px;
+        }
+        .button, .link-button {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            margin: 10px auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .button {
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .link-button {
+            background-color: transparent;
+            color: grey;
+            font-size: 14px;
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .headline, .content {
+                padding: 10px;
+            }
+            .headline, .content-title, .price-old, .price-new, .button, .link-button {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="headline headline-red">Importante⚠️Estamos processando o seu pagamento.</div>
+    <div class="headline headline-green">Enquanto isso veja o aviso urgente que temos pra você:</div>
+    <div class="content">
+        <h1 class="content-title">ATENÇÃO:</h1>
+        <p class="content-text">Você não terá acesso vitalício a plataforma e não terá direito a receber atualizações surpresas...<br><br>...então adicionei como um "presente" o acesso vitalício da Plataforma do Theta Max para você ter acesso PARA SEMPRE</p>
+        <h1 class="price-old">De <s>R$ 200</s></h1>
+        <h1 class="price-new">Por apenas 19 reais você tem acesso vitalício a Plataforma do Theta Max. Clique no botão abaixo:</h1>
+        <a href="https://go.perfectpay.com.br/PPU38COQLMQ?upsell=true" class="button">Próximo Passo</a>
+        <a href="https://go.perfectpay.com.br/PPU38COQLMQ?upsell=true" class="link-button">Não, eu vou continuar sem dinheiro</a>
+    </div>
+</body>
+</html>
